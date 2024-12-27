@@ -52,13 +52,15 @@ body {
     top: 50%; /* Zentriere vertikal */
     left: 50%; /* Zentriere horizontal */
     transform: translate(-50%, -50%); /* Korrektur zur exakten Zentrierung */
-    background: rgba(255, 255, 255, 0.9); /* Halbtransparenter weißer Hintergrund */
+    background: rgba(255, 255, 255, 0.8); /* Halbtransparenter weißer Hintergrund */
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 35%; /* Breite der Box */
     text-align: center;
     z-index: 10; /* Über allem anderen */
+    opacity: 0.7; /* Standardzustand: transparenter */
+    transition: opacity 0.3s ease; /* Übergangsanimation */
 }
 
 
@@ -262,6 +264,43 @@ body {
     transform: scale(1.2); /* Vergrößerung beim Hover */
 }
 
+.cart-popup {
+    position: absolute;
+    top: 70px; /* Abstand unterhalb des Warenkorb-Symbols */
+    right: 20px; /* Position nahe dem Warenkorb */
+    width: 250px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none; /* Versteckt das Pop-up standardmäßig */
+    z-index: 1000;
+}
+
+.cart-popup-content {
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    align-items: center;
+}
+
+.cart-popup img {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.popup-details p {
+    margin: 0;
+    font-size: 14px;
+}
+
+#cart-counter {
+	color: black;
+	font-weight: bold;
+}
+
 /* Countdown Styling */
 .countdown {
   font-size: 24px;
@@ -269,6 +308,7 @@ body {
   font-family: Arial, sans-serif;
   font-weight: bold;
 }
+
 
 .navbar-content {
   display: flex;
@@ -384,4 +424,9 @@ body {
 /* Webseite, die nach dem Schließen des Popups wieder sichtbar wird */
 body {
   overflow: hidden; /* Verhindert das Scrollen während des Popups */
+}
+
+.flashsale-nav img {
+	weight: 65px;
+	height: 65px;
 }
