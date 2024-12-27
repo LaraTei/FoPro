@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produktdetailseite - Grauer Hoodie</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles2.css">
 		<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
 <body>
@@ -55,14 +55,24 @@
 						</a></li>
 		    </ul>
 				<div class="navbar-content">
+						<div class="flashsale-nav"> 
+								<img src="flashsale.jpg" alt="Flashsale" />
+						</div>
 				      <div class="countdown" id="countdown"></div>
 				    </div>
 		    <div class="cart-icon">
-		        <a href="#warenkorb">
 		            <img src="cart-icon.jpg" alt="Warenkorb" />
 								<span id="cart-counter">0</span>
-		        </a>
 		    </div>
+ 				<div class="cart-popup" id="cart-popup">
+ 				    <div class="cart-popup-content">
+ 				        <img id="popup-product-image" src="VintageSweater.jpg" alt="Produktbild">
+ 				        <div class="popup-details">
+ 				            <p id="popup-product-name">UNISEX Hoodie</p>
+ 				            <p id="popup-product-size">Größe: M</p>
+ 				        </div>
+ 						</div>
+ 			 </div>
 		</nav>
 		
  <div class="product-page">
@@ -73,7 +83,7 @@
 
      <!-- Zentrierter Bereich: Produktdetails -->
      <div class="product-details">
-         <h1>Hoodie</h1>
+         <h1>UNISEX Hoodie</h1>
         <p class="price">
             <span class="original-price">50,00 €</span>
             <span id="discounted-price" class="discounted-price">35,00 €</span>
@@ -123,3 +133,4 @@
 		<script src="script_gamification.js"></script>
 </body>
 </html>
+
