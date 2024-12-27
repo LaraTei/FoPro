@@ -1,5 +1,5 @@
 // Zielzeit setzen (3 Tage ab jetzt)
-const targetDate = new Date().getTime() + (3 * 24 * 60 * 60 * 1000);  // 3 Tage in Millisekunden
+const targetDate = new Date().getTime() + (15 * 60 * 1000); // 15 Minuten in Millisekunden
 
 // Funktion zum Aktualisieren des Countdowns
 function updateCountdown() {
